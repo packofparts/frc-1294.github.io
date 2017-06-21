@@ -15,11 +15,10 @@ stylesheets:
       "http://www.team1294.org/img/carousel/wowslider/img_7066.jpg"];
 
   const $container = $("div#main-carousel");
-  let counter = 1;
 
-  for (let image in images) {
-      let alt_text = "Slideshow Image " + counter;
-      let element = $("<img>", {src: image, alt: alt_text, title: alt_text});
+  for (let i = 0; i < images.length; i++) {
+      let alt_text = "Slideshow Image " + (i + 1);
+      let element = $("<img>", {src: images[i], alt: alt_text, title: alt_text});
       $container.append(element);
   }
 
