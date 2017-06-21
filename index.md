@@ -1,6 +1,6 @@
 ---
 layout: default
-title: home
+title: Home
 permalink: /
 stylesheets:
   - //cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css
