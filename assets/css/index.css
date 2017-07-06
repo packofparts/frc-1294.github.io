@@ -1,0 +1,17 @@
+div#main-carousel {
+    width: 100vw;
+    height: 100%;
+    margin: -8px -8px 0 -8px;
+}
+
+div#main-carousel button.slick-arrow {
+    z-index: 10;
+}
+
+div#main-carousel button.slick-arrow.slick-prev {
+    left: 0;
+}
+
+div#main-carousel button.slick-arrow.slick-next {
+    right: 0;
+}

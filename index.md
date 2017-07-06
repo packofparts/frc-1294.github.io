@@ -5,9 +5,10 @@ permalink: /
 stylesheets:
   - //cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css
   - //cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css
+  - assets/css/index.css
 ---
 
-<div id="main-carousel" style="font-size: 500%; width: 200px; text-align: center; margin: 0 auto 0 auto;"></div>
+<div id="main-carousel"></div>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script>
   const images = ["http://www.team1294.org/img/carousel/wowslider/16141082923_5ba28a67d5_o.jpg",
