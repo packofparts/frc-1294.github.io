@@ -15,3 +15,7 @@ div#main-carousel button.slick-arrow.slick-prev {
 div#main-carousel button.slick-arrow.slick-next {
     right: 0;
 }
+
+.slick-slide {
+    height: auto;
+}
