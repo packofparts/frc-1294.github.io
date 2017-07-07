@@ -89,6 +89,7 @@ footer {
 
 div.sponsor-grid-row {
   display: flex;
+  align-items: center;
   padding: 8px;
 }
 
@@ -98,5 +99,5 @@ div.sponsor-grid-row div.grid-cell {
 
 div.sponsor-grid-row div.grid-cell img {
   vertical-align: middle;
-  height: 50px;
+  width: 190px;
 }
