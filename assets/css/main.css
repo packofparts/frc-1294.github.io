@@ -57,7 +57,7 @@ nav li.menu ul {
   opacity: 0;
   position: absolute;
   top: 55px;
-  left: 420px;
+  left: 325px;
   transition: opacity 0.5s linear;
   padding: 8px;
   display: inline-block;
