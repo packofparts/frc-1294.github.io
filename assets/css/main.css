@@ -50,9 +50,6 @@ nav li {
   margin-right: 8px;
 }
 
-nav li:hover {
-}
-
 nav li.menu ul {
   opacity: 0;
   position: absolute;
