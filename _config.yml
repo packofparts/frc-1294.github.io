@@ -36,6 +36,7 @@ exclude:
   - .travis.yml
   - package.json
   - .stylelintrc
+  - node_modules
 include:
   - _pages
 sass:
