@@ -1,0 +1,24 @@
+{
+  "name": "frc-1294.github.io",
+  "version": "0.0.1",
+  "license": "GPL-3.0",
+  "description": "The work in progress Jekyll version of the FRC team 1294 Top Gun website.",
+  "keywords": [
+    "FRC 1294",
+    "Top Gun"
+  ],
+  "main": "_site/index.html",
+  "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frc-1294/frc1294.githbub.io"
+  },
+  "scripts": {
+    "test": "stylelint '_sass/*.scss'"
+  },
+  "devDependencies": {
+    "stylelint": "^9.4.0",
+    "stylelint-config-recommended-scss": "^3.2.0",
+    "stylelint-scss": "^3.2.0"
+  }
+}
