@@ -37,6 +37,8 @@ exclude:
   - package.json
   - .stylelintrc
   - node_modules
+  - .gitignore
+  - .vscode
 include:
   - _pages
 sass:
