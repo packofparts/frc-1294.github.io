@@ -1,9 +1,4 @@
 sudo: false
-
-branches:
-  except:
-    - gh-pages
-
 matrix:
   include:
     - language: ruby
