@@ -34,6 +34,8 @@ exclude:
   - vendor
   - _posts
   - .travis.yml
+  - package.json
+  - .stylelintrc
 include:
   - _pages
 sass:
