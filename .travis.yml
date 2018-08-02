@@ -1,28 +1,23 @@
 sudo: false
+
 branches:
   except:
-  - gh-pages
+    - gh-pages
+
 matrix:
   include:
-  - language: ruby
-    rvm: 2.5.1
-    env:
-      global:
-      - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-    script:
-    - bundle exec jekyll build
-    - bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html
-    cache: bundler
-  - language: node_js
-    node_js: node
-    cache:
-      directories:
-      - node_modules
-deploy:
-  provider: pages
-  keep-history: true
-  skip-cleanup: false
-  on:
-    branch: master
-  github_token:
-    secure: epX8r3ZgAKC5jS8PW7/Zz5Vqjm5ByHlEsgeJXPfP4wN6bNCv4R70kJLHcsiXNJTd0SoMALHjac442IG9DL/xxQR0K8oRzrH3tSpfVHWaamKaX7EwoVwS3HhNwc4kXxA+7wmkyr9c0CV2QwwbpxaEwIkPTdC7wXm/j8YoAHo0nYEBDHQnfQDCzaLTjCKzAiMjv0zBrSBqFs9Xdvp2SCaeZ9qppVZHSyYbu05j8GL8AFGa+x+7I0KwZcerbTh2QwtlSvL4vPbyY6mrxmiPSAeY1MOHVc6yQbHvw6h4S/st8G01RlY0tHup/IfaP3LaQOh7SPGA8VIGHnngZD5RQ9zWeaKen1y8/kPWH9YuGOefKZkCmauStny4awtvaqjMYcYpov1umDfTVNrJd+78vgE1ZOv3oSmYMg+f1VZFZs7fMeKYy33DMH9wK5fcf1rU+PH9INEdb1FB/94bu2oB3/3cV9u98x7AwxLmR4iyz+QQAitlHjbu4WPXjh4qq8qCAcTGjb1nFw6Fy1JbVYSt1BErDwS/K4rExwmhlZ1P7PCMe5+s18ejE6aLCS10Bj7wJCXM7ik0E5ouA4tOMbC7FVdC2V2cNtRYRSjKlelNBVtwZ4xTIKpMTe+3rQgxcCOK13R5gLUFUbVX7TergnyKvc+S0PgzYXQyWfz4CbxTJp/G7jE=
+    - language: ruby
+      rvm: 2.5.1
+      env:
+        global:
+          - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+      script:
+        - bundle exec jekyll build
+        - bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html
+      cache: bundler
+    
+    - language: node_js
+      node_js: "node"
+      cache:
+        directories: 
+          - "node_modules"
