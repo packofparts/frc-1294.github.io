@@ -33,6 +33,7 @@ exclude:
   - README.md
   - vendor
   - _posts
+  - .travis.yml
 include:
   - _pages
 sass:
