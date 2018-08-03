@@ -14,20 +14,37 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Top Gun Robotics
-email: contactus@team1294.org
+email: webmaster@team1294.org
 description: > # this means to ignore newlines until "baseurl:"
   Top Gun Robotics, FIRST Robotics Team 1294, is a high school robotics team
   from Eastlake High School in Sammamish, WA.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: topgunrobotics
+facebook_username: topgunrobotics
+twitter_username: TopGun1294
 github_username:  FRC-1294
 
 # Build settings
 markdown: kramdown
-theme: minima
-gems:
-  - jekyll-feed
 exclude:
+  - .gitignore
+  - .stylelintrc
+  - .travis.yml
+  - .vscode
+  - app.json
+  - config.ru
   - Gemfile
   - Gemfile.lock
+  - LICENSE
+  - node_modules
+  - package.json
+  - Procfile
+  - Rakefile
+  - README.md
+  - vendor
+include:
+  - _pages
+sass:
+  style: compressed
+plugins:
+  - octopress-autoprefixer

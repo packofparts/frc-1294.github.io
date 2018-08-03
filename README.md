@@ -1,4 +1,4 @@
-# frc-1294.github.io
+# frc-1294.github.io [![Build Status](https://travis-ci.com/FRC-1294/frc-1294.github.io.svg?token=qpicD4KrDiAsuJspXjs4&branch=master)](https://travis-ci.com/FRC-1294/frc-1294.github.io)
 The (in development) website for FRC 1294: Top Gun.
 
 ## Why a new website?
