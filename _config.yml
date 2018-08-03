@@ -31,11 +31,15 @@ exclude:
   - .stylelintrc
   - .travis.yml
   - .vscode
+  - app.json
+  - config.ru
   - Gemfile
   - Gemfile.lock
   - LICENSE
   - node_modules
   - package.json
+  - Procfile
+  - Rakefile
   - README.md
   - vendor
 include:

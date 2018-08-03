@@ -1,0 +1,13 @@
+{
+    "name": "frc-1294.github.io",
+    "scripts": {},
+    "env": {},
+    "formation": {},
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/ruby"
+        }
+    ]
+}
+  
