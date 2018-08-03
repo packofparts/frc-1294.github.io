@@ -27,18 +27,21 @@ github_username:  FRC-1294
 # Build settings
 markdown: kramdown
 exclude:
+  - .gitignore
+  - .stylelintrc
+  - .travis.yml
+  - .vscode
+  - app.json
+  - config.ru
   - Gemfile
   - Gemfile.lock
   - LICENSE
+  - node_modules
+  - package.json
+  - Procfile
+  - Rakefile
   - README.md
   - vendor
-  - _posts
-  - .travis.yml
-  - package.json
-  - .stylelintrc
-  - node_modules
-  - .gitignore
-  - .vscode
 include:
   - _pages
 sass:
