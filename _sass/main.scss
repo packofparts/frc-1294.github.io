@@ -270,3 +270,56 @@ div.sponsor-grid-row {
     }
   }
 }
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+div#involve-parent {
+  @media (max-width: 1454px) {
+    div {
+      display: block;
+      width: 100%;
+      margin-bottom: 4px;
+    }
+  }
+
+  @media (min-width: 1454px) {
+    border-spacing: 8px;
+    display: table;
+
+    div {
+      display: table-cell;
+      width: 23%;
+      
+      &:first-child {
+        border-right: solid #222 3px;
+      }
+    }
+  }
+
+  div {
+    padding: 8px;
+    vertical-align: top;
+
+    &.involve {
+      border-radius: 5px;
+  
+      &:nth-child(2) {
+        background: #00aeff;
+      }
+  
+      &:nth-child(3) {
+        background: #01608b;
+      }
+  
+      &:nth-child(4) {
+        background: #1884b6;
+      }
+    }
+  }
+}
