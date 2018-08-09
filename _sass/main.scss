@@ -215,11 +215,15 @@ div.content-block {
 }
 
 div.hero-img, div.hero-space {
-  background: transparent;
+  background-color: transparent;
   height: calc(80vh - 8px);
   overflow: hidden;
+  z-index: -1;
   
   &.hero-img {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
