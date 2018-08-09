@@ -1,17 +1,10 @@
-* {
-  // margin: 0;
-  font-family: 'Titillium Web', sans-serif;
-}
-
-@media (max-width: 950px) {
+@media (max-width: 1090px) {
   body {
     margin: 0;
   }
 
-  div.img-with-caption {    
-    img {
-      width: 80vw;
-    }
+  figure.img-with-caption img {
+    width: 80vw;
   }
 
   // for now, just hide the sponsor grid on narrow width devices
@@ -20,10 +13,14 @@
     display: none !important;
   }
 
+  div.content-block.extend {
+    margin: -8px !important;
+    padding: 8px !important;
+  }
+
   // TODO: actually hide and replace the nav with a mobile friendly version when at a narrow width
   header {
-    display: block !important;
-    width: 100vw !important;
+    width: 100vw;
 
     nav, ul#header-nav-social {
       display: none !important;
@@ -31,17 +28,22 @@
   }
 }
 
-@media (min-width: 950px) {
+@media (min-width: 1090px) {
   // TODO: put rules in this media query so the `!important`s in the other can be removed
 
   body {
     margin: 0 10vw;
   }
+
+  header {
+    width: 80vw;
+  }
 }
 
 body {
-  color: white;
   background: #333;
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
 }
 
 a {
@@ -55,6 +57,9 @@ header {
   align-items: center;
   justify-content: flex-start;
   box-shadow: 0px 5px 20px 3px black;
+  z-index: 0;
+  position: fixed;
+  top: 0;
 
   * {
     display: inline;
@@ -87,8 +92,7 @@ header {
         ul {
           opacity: 0;
           position: absolute;
-          top: 60px;
-          left: calc(10vw + 325px); /* todo: this won't work if we make another menu */
+          left: 325px; /* todo: this won't work if we make another menu */
           transition: opacity 0.5s linear;
           padding: 8px;
           display: inline-block;
@@ -117,17 +121,31 @@ div#content-container {
   padding: 8px;
 }
 
-div.img-with-caption {
+figure.img-with-caption {
   text-align: center;
+  margin: 0;
   
   img {
     max-width: 750px;
   }
 
-  p {
+  figcaption {
     color: #999;
     font-size: small;
   }
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h2 {
+  color: #ccc;
+}
+
+h3 {
+  color: #999;
+  font-size: 1em;
 }
 
 div.content-block {
@@ -136,25 +154,97 @@ div.content-block {
     box-shadow: 0 2px 1px 1px black;
     color: #333;
 
-    div.img-with-caption p {
+    figure.img-with-caption figcaption {
       color: #444;
     }
   }
 
   &.extend {
     background: #222;
-    padding: 4px 10vw;
+    padding: 8px 10vw;
     margin-left: calc(-10vw - 8px);
     margin-right: calc(-10vw - 8px);
     width: auto;
+  }
+
+  &.angular {
+    /* https://stackoverflow.com/questions/29410329/create-a-slanted-edge-to-a-div */
+
+    position: relative;
+    display: inline-block;
+    margin-bottom: 8px;
+    overflow: hidden;
+    width: 99%;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #5f5f5f;
+      -webkit-transform-origin: 100% 0;
+      -ms-transform-origin: 100% 0;
+      transform-origin: 100% 0;
+      -webkit-transform: skew(-45deg);
+      -ms-transform: skew(-45deg);
+      transform: skew(-45deg);
+      z-index: -1;
+    }
+
+    h2 {
+      color: #e6e6e6;
+      margin-top: -22px;
+    }
+    
+    h3 {
+      color: #b1b1b1;
+      margin-top: -20px;
+      margin-bottom: 4px;
+
+      code {
+        color: #fff;
+        font-weight: bold;
+      }
+    }
   }
 
   padding: 8px;
   margin-bottom: 8px;
 }
 
-h1 {
-  margin-top: 0;
+div.hero-img, div.hero-space {
+  background: transparent;
+  height: calc(80vh - 8px);
+  overflow: hidden;
+  
+  &.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &.hero-space {
+    margin-top: -8px;
+  }
+}
+
+div.hero-next {
+  box-shadow: 0px -3px 5px 0px black;
+}
+
+figure.highlight {
+  border-radius: 15px;
+  padding-left: 8px;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  pre {
+    margin-top: 0px;
+    margin-bottom: -15px;
+  }
 }
 
 footer {
@@ -174,6 +264,63 @@ div.sponsor-grid-row {
     img {
       vertical-align: middle;
       width: 190px;
+    }
+  }
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+div#involve-parent {
+  @media (max-width: 1454px) {
+    div {
+      display: block;
+      width: 100%;
+      margin-bottom: 4px;
+    }
+  }
+
+  @media (min-width: 1454px) {
+    border-spacing: 8px;
+    display: table;
+
+    div {
+      display: table-cell;
+      width: 23%;
+      
+      &:first-child {
+        border-right: solid #222 3px;
+      }
+    }
+  }
+
+  div {
+    padding: 8px;
+    vertical-align: top;
+
+    &.involve {
+      border-radius: 5px;
+
+      h2 {
+        color: white;
+      }
+  
+      &:nth-child(2) {
+        background: #00aeff;
+      }
+  
+      &:nth-child(3) {
+        background: #01608b;
+      }
+  
+      &:nth-child(4) {
+        background: #1884b6;
+      }
     }
   }
 }

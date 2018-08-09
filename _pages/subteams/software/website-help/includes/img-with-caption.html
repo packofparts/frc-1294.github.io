@@ -1,0 +1,64 @@
+---
+layout: default
+title: 'Website Help: How to use img-with-caption'
+permalink: /subteams/software/website-help/includes/img-with-caption
+stylesheets:
+    - /assets/css/highlight.css
+---
+<div class="content-block angular">
+    <h1>Website Help</h1>
+    <h2>Includes</h2>
+    <h3>How to Use <code>img-with-caption</code></h3>
+</div>
+
+<div class="content-block extend">
+    <code>img-with-caption</code> is a <a href="https://jekyllrb.com/docs/includes/">Jekyll include</a>.
+    It is a file in the project, located at <code>_includes/img-with-caption.html</code>.<br>
+    <br>
+    This include is for creating a figure, an image with a <code>&lt;p&gt;</code> for a caption, and links
+    the image to it's src url for viewing the full image. All of this structure is done in one <code>{% raw %}{% include %}{% endraw %}</code>.<br>
+    <br>
+    This code when placed into a page will create the below image and caption, as seen on the <a href="/subteams/electrical/">electrical page.</a><br>
+
+    {% highlight liquid %}
+        {% raw %}
+{% include img-with-caption.html
+    file="/assets/img/subteams/electrical/frc_3128_wiringdiagram.png"
+    alt="FRC Control System Wiring Diagram"
+    caption='A new, up to date wiring diagram for the FRC control system by team 3128 -- Found on
+    <a href="https://www.chiefdelphi.com/forums/showthread.php?p=1778684#post1778684">Chief Delphi</a>'
+%}
+        {% endraw %}
+    {% endhighlight %}
+</div>
+
+<div class="content-block">
+    {% include img-with-caption.html
+        file="/assets/img/subteams/electrical/frc_3128_wiringdiagram.png"
+        alt="FRC Control System Wiring Diagram"
+        caption='A new, up to date wiring diagram for the FRC control system by team 3128 -- Found on
+        <a href="https://www.chiefdelphi.com/forums/showthread.php?p=1778684#post1778684">Chief Delphi</a>'
+    %}
+</div>
+
+<div class="content-block extend">
+    <code>img-with-caption</code> takes three parameters: <code>file</code>, <code>alt</code>,
+    and <code>caption</code>. <code>file</code> and <code>caption</code> are pretty self
+    explanitory: the path to the image and the caption for the image respectively. <code>alt</code>
+    is <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#Attributes">
+    "an alternative text description of the image"</a>, typically for use in the event the image
+    can't be loaded, accessiblity, or some other reason a text representation of an image is needed.<br>
+    <br>
+    In the event one of these parameters is ommited, defaults are used, but they generally aren't wanted,
+    as for most pages they look pretty silly.
+
+    {% highlight liquid %}
+        {% raw %}
+{% include img-with-caption.html %}
+        {% endraw %}
+    {% endhighlight %}
+</div>
+
+<div class="content-block">
+    {% include img-with-caption.html %}
+</div>
