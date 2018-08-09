@@ -4,10 +4,11 @@ title: Home
 stylesheets:
   - //cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css
   - //cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css
-  - /assets/css/index.css
+scripts:
+  - //cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js
 ---
-
-<div class="content-block">
+{% include hero-parallax.html image="/assets/img/home-hero.jpg" %}
+<div class="content-block extend hero-next">
   This is some filler content that is a little bit more interesting than the content that was here before.
   It's still not that interesting.
 </div>
