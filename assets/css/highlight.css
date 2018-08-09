@@ -1,5 +1,11 @@
 /* MODIFIED FROM https://github.com/kakawait/pygments-darcula/blob/master/darcula.css */
 
+/* Add custom font */
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400,700');
+code {
+    font-family: Fira Mono;
+}
+
 /* ----[ BASE ]---- */
 
 .hll { background-color: #214283 }
