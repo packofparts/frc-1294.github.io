@@ -1,7 +1,42 @@
 * {
-  margin: 0;
-  padding: 0;
+  // margin: 0;
   font-family: 'Titillium Web', sans-serif;
+}
+
+@media (max-width: 950px) {
+  body {
+    margin: 0;
+  }
+
+  div.img-with-caption {    
+    img {
+      width: 80vw;
+    }
+  }
+
+  // for now, just hide the sponsor grid on narrow width devices
+  // TODO: this should be replaced with showing a different format for sponsors
+  div.sponsor-grid-row {
+    display: none !important;
+  }
+
+  // TODO: actually hide and replace the nav with a mobile friendly version when at a narrow width
+  header {
+    display: block !important;
+    width: 100vw !important;
+
+    nav, ul#header-nav-social {
+      display: none !important;
+    }
+  }
+}
+
+@media (min-width: 950px) {
+  // TODO: put rules in this media query so the `!important`s in the other can be removed
+
+  body {
+    margin: 0 10vw;
+  }
 }
 
 body {
@@ -31,6 +66,7 @@ header {
 
   ul {
     list-style: none;
+    padding: 0;
   }
 
   nav {
@@ -52,7 +88,7 @@ header {
           opacity: 0;
           position: absolute;
           top: 60px;
-          left: 325px;
+          left: calc(10vw + 325px); /* todo: this won't work if we make another menu */
           transition: opacity 0.5s linear;
           padding: 8px;
           display: inline-block;
@@ -81,14 +117,42 @@ div#content-container {
   padding: 8px;
 }
 
+div.content-block {
+  &.card {
+    background: #eee;
+    box-shadow: 0 2px 1px 1px black;
+    color: #333;
+
+    div.img-with-caption p {
+      color: #444;
+    }
+  }
+
+  &.extend {
+    background: #222;
+    padding: 4px 10vw;
+    margin-left: calc(-10vw - 8px);
+    margin-right: calc(-10vw - 8px);
+    width: auto;
+  }
+
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
 footer {
+  border-top: #222 solid 5px;
   padding: 8px;
   text-align: center;
 }
 
 div.sponsor-grid-row {
-  display: flex;
   align-items: center;
+  display: flex;
   padding: 8px;
 
   div.grid-cell {
@@ -98,5 +162,18 @@ div.sponsor-grid-row {
       vertical-align: middle;
       width: 190px;
     }
+  }
+}
+
+div.img-with-caption {
+  text-align: center;
+  
+  img {
+    max-width: 750px;
+  }
+
+  p {
+    color: #999;
+    font-size: small;
   }
 }
