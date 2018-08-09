@@ -308,6 +308,10 @@ div#involve-parent {
 
     &.involve {
       border-radius: 5px;
+
+      h2 {
+        color: white;
+      }
   
       &:nth-child(2) {
         background: #00aeff;
