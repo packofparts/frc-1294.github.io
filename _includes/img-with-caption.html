@@ -1,0 +1,7 @@
+<figure class="img-with-caption">
+    <a href="{{ include.file | default: '/' }}">
+        <img alt="{{ include.alt | default: 'Placeholder Image' }}" src="{{ include.file | default: 'http://via.placeholder.com/750x521' }}">
+    </a>
+    <figcaption>{{ include.caption | default: "The person who made this page failed to add a caption to this image." }}</figcaption>
+</figure>
+    
