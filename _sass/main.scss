@@ -7,13 +7,7 @@
     width: 80vw;
   }
 
-  // for now, just hide the sponsor grid on narrow width devices
-  // TODO: this should be replaced with showing a different format for sponsors
-  div.sponsor-grid-row {
-    display: none !important;
-  }
-
-  div.content-block.extend {
+  .content-block.extend {
     margin: -8px !important;
     padding: 8px !important;
   }
@@ -42,8 +36,9 @@
 
 body {
   background: #333;
-  font-family: 'Titillium Web', sans-serif;
   color: white;
+  font-family: 'Titillium Web', sans-serif;
+  overflow-x: hidden
 }
 
 a {
@@ -148,7 +143,7 @@ h3 {
   font-size: 1em;
 }
 
-div.content-block {
+.content-block {
   &.card {
     background: #eee;
     box-shadow: 0 2px 1px 1px black;
@@ -252,22 +247,34 @@ figure.highlight {
 }
 
 footer {
-  border-top: #222 solid 5px;
-  padding: 8px;
   text-align: center;
-}
+  margin-right: -10vw !important;
+  margin-bottom: 0 !important;
 
-div.sponsor-grid-row {
-  align-items: center;
-  display: flex;
-  padding: 8px;
-
-  div.grid-cell {
-    flex: 1;
-
-    img {
+  div#sponsor-grid {
+    a {
+      margin: 8px;
+      text-decoration: none;
+      display: inline-block;
       vertical-align: middle;
-      width: 190px;
+
+      &:nth-child(-n + 3) img {
+        max-height: 150px;
+        max-width: 300px;
+      }
+
+      &:nth-child(n + 4) img {
+        max-height: 100px;
+        max-width: 190px;
+      }
+    }
+
+    hr {
+      border-color: #333;
+      border-style: solid;
+      border-width: 2px;
+      margin: 8px auto;
+      max-width: 900px;
     }
   }
 }
@@ -278,53 +285,4 @@ div.sponsor-grid-row {
 
 .float-right {
   float: right;
-}
-
-div#involve-parent {
-  @media (max-width: 1454px) {
-    div {
-      display: block;
-      width: 100%;
-      margin-bottom: 4px;
-    }
-  }
-
-  @media (min-width: 1454px) {
-    border-spacing: 8px;
-    display: table;
-
-    div {
-      display: table-cell;
-      width: 23%;
-      
-      &:first-child {
-        border-right: solid #222 3px;
-      }
-    }
-  }
-
-  div {
-    padding: 8px;
-    vertical-align: top;
-
-    &.involve {
-      border-radius: 5px;
-
-      h2 {
-        color: white;
-      }
-  
-      &:nth-child(2) {
-        background: #00aeff;
-      }
-  
-      &:nth-child(3) {
-        background: #01608b;
-      }
-  
-      &:nth-child(4) {
-        background: #1884b6;
-      }
-    }
-  }
 }

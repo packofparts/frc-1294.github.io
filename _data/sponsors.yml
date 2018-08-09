@@ -1,0 +1,59 @@
+- name: FIRST Washington
+  img: firstwa
+  url: https://www.firstwa.org/
+
+- name: Eastlake High School
+  img: ehs
+  url: https://ehs.lwsd.org/
+
+- name: EHS PTSA
+  img: ptsa
+  url: http://ehsptsa.org/Home
+
+- name: Aerojet Rocketdyne
+  img: aerojet-rocketdyne
+  url: http://www.rocket.com/
+
+- name: Artifex
+  img: artifex
+  url: https://www.artifex.com/
+
+- name: Baxter
+  img: baxter
+  url: https://www.baxter.com/
+
+- name: Disney
+  img: disney
+  url: https://www.disney.com/
+
+- name: Donuts
+  img: donuts
+  url: https://donuts.domains/
+
+- name: F5 Networks
+  img: f5
+  url: https://f5.com/
+
+- name: GoDaddy
+  img: godaddy
+  url: https://www.godaddy.com/
+
+- name: Microsoft
+  img: microsoft
+  url: https://www.microsoft.com/
+
+- name: Society of Automotive Engineers
+  img: sae
+  url: https://www.sae.org/
+
+- name: Dassault Systemes SolidWorks
+  img: solidworks
+  url: https://www.solidworks.com/
+
+- name: SolidCAM
+  img: solidcam
+  url: https://www.solidcam.com/en-us/
+
+- name: Xerox
+  img: xerox
+  url: https://www.xerox.com/
