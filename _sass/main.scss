@@ -215,18 +215,15 @@ div.content-block {
 }
 
 div.hero-img, div.hero-space {
-  $width: 100vw;
-  $height: 80vh;
-
   background: transparent;
-  height: calc(#{$height} - 8px);
+  height: calc(80vh - 8px);
   overflow: hidden;
-  width: $width;
   
   &.hero-img {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
   }
 
   &.hero-space {
