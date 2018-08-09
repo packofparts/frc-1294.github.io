@@ -135,6 +135,19 @@ figure.img-with-caption {
   }
 }
 
+h1 {
+  margin-top: 0;
+}
+
+h2 {
+  color: #ccc;
+}
+
+h3 {
+  color: #999;
+  font-size: 1em;
+}
+
 div.content-block {
   &.card {
     background: #eee;
@@ -223,19 +236,6 @@ div.hero-img, div.hero-space {
 
 div.hero-next {
   box-shadow: 0px -3px 5px 0px black;
-}
-
-h1 {
-  margin-top: 0;
-}
-
-h2 {
-  color: #ccc;
-}
-
-h3 {
-  color: #999;
-  font-size: 1em;
 }
 
 figure.highlight {
