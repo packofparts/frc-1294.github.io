@@ -6,7 +6,8 @@
 <body>
   {% include header.html %}
 
-  <div id="content-container" style="margin-top: 95px;">
+  <div id="content-container" {% unless page.hero-image %} style="margin-top: 95px;" {% endunless %}>
+    {% if page.hero-image %}{% include hero-parallax.html image=page.hero-image %}{% endif %}
     {{ content }}
   </div>
 
