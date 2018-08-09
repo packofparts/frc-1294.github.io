@@ -117,6 +117,19 @@ div#content-container {
   padding: 8px;
 }
 
+div.img-with-caption {
+  text-align: center;
+  
+  img {
+    max-width: 750px;
+  }
+
+  p {
+    color: #999;
+    font-size: small;
+  }
+}
+
 div.content-block {
   &.card {
     background: #eee;
@@ -162,18 +175,5 @@ div.sponsor-grid-row {
       vertical-align: middle;
       width: 190px;
     }
-  }
-}
-
-div.img-with-caption {
-  text-align: center;
-  
-  img {
-    max-width: 750px;
-  }
-
-  p {
-    color: #999;
-    font-size: small;
   }
 }
