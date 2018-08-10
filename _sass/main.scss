@@ -133,24 +133,6 @@ header {
 
         &.fa-instagram {
           animation: instacolors infinite linear 30s;
-
-          @keyframes instacolors {
-            start, end {
-              color: #4e62d3;
-            }
-
-            25% {
-              color: #a835b6;
-            }
-
-            50% {
-              color: #dc2e76;
-            }
-
-            75% {
-              color: #ffd473;
-            }
-          }
         }
 
         &.fa-github {
@@ -158,6 +140,24 @@ header {
         }
       }
     }
+  }
+}
+
+@keyframes instacolors {
+  0%, 100% {
+    color: #4e62d3;
+  }
+
+  25% {
+    color: #a835b6;
+  }
+
+  50% {
+    color: #dc2e76;
+  }
+
+  75% {
+    color: #ffd473;
   }
 }
 
