@@ -1,4 +1,5 @@
-<div class="hero-img" style="background-image: url('{{ include.image | default: 'http://via.placeholder.com/1920x1080?text=Missing+Hero+Image' }}');"></div>
+<div class="hero-img"  data-ios-disabled="false" data-android-disabled="false"
+    style="background-image: url('{{ include.image | default: 'http://via.placeholder.com/1920x1080?text=Missing+Hero+Image' }}');"></div>
 <div class="hero-space"></div>
 <script>
     /**
@@ -7,7 +8,7 @@
      */
     window.onload = function() {
         const e = $('.hero-img')
-        e.parallax({imageSrc: '{{ include.image | default: "http://via.placeholder.com/1920x1080?text=Missing+Hero+Image" }}'})
         e.css("background-image", "initial")
+        e.parallax({imageSrc: '{{ include.image | default: "http://via.placeholder.com/1920x1080?text=Missing+Hero+Image" }}'})
     }
 </script>
