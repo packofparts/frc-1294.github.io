@@ -108,7 +108,56 @@ header {
   }
 
   ul#header-nav-social {
+    background: #444;
+    border-radius: 5px;
+    padding: 4px;
     margin-left: auto;
+
+    a {
+      margin: 0 4px;
+
+      i {
+        font-size: 2em;
+
+        &.fa-youtube {
+          color: #f00;
+        }
+
+        &.fa-facebook {
+          color: #f7f7f9;
+        }
+
+        &.fa-twitter {
+          color: #1da1f2;
+        }
+
+        &.fa-instagram {
+          animation: instacolors infinite linear 30s;
+
+          @keyframes instacolors {
+            start, end {
+              color: #4e62d3;
+            }
+
+            25% {
+              color: #a835b6;
+            }
+
+            50% {
+              color: #dc2e76;
+            }
+
+            75% {
+              color: #ffd473;
+            }
+          }
+        }
+
+        &.fa-github {
+          color: #fff;
+        }
+      }
+    }
   }
 }
 
