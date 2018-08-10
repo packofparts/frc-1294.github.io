@@ -32,6 +32,7 @@ exclude:
   - .travis.yml
   - .vscode
   - app.json
+  - CNAME
   - config.ru
   - Gemfile
   - Gemfile.lock
