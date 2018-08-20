@@ -52,18 +52,24 @@ header {
         }
     }
     ul#header-nav-social {
+        align-items: center;
         background: $color-bg-light;
         $border-radius: 15px;
-        border-top-left-radius: $border-radius;
-        border-bottom-left-radius: $border-radius;
+        // border-top-left-radius: $border-radius;
+        // border-bottom-left-radius: $border-radius;
+        display: flex;
+        flex-wrap: wrap;
         height: 86px;
+        justify-content: center;
         padding: 4px;
         margin-left: auto;
         margin-right: -8px;
+        width: 120px;
         a {
             margin: 0 4px;
             i {
                 font-size: 2em;
+                // margin-top: 25px; // calc((86px - 32px) / 2);, tweaked a little (-2px) to make it look right
                 &.fa-youtube {
                     color: $color-social-youtube;
                 }
