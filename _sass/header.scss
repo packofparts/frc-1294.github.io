@@ -88,15 +88,61 @@ header {
             }
         }
     }
+
+    span#nav-button {
+        margin-left: auto;
+        margin-right: 8px;
+        font-size: 2em;
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 1090px) {
-    // TODO: actually hide and replace the nav with a mobile friendly version when at a narrow width
     header {
         width: 100vw;
-        nav,
+        nav {
+            display: none;
+            position: fixed;
+            top: 94px;
+            left: 0;
+            background-color: $color-bg-dark;
+            width: 100vw;
+            margin: 0;
+            padding: 8px;
+            font-size: 1.2em;
+            li {
+                display: block;
+                margin-bottom: 8px;
+
+                &.menu {
+                    span {
+                        display: block;
+                    }
+                    ul {
+                        margin-left: 16px;
+                        opacity: 1;
+                        position: initial;
+                        background-color: transparent;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
         ul#header-nav-social {
-            display: none !important;
+            display: flex;
+            position: fixed;
+            width: 100vw;
+            top: 315px;
+            left: -110vw;
+            margin: 0;
+            height: initial;
+            transition: left 0.5s ease-in-out;
+            &.visible {
+                left: 0;
+            }
+        }
+        span#nav-button {
+            display: block;
         }
     }
 }
@@ -104,5 +150,8 @@ header {
 @media (min-width: 1090px) {
     header {
         width: 80vw;
+        span#nav-button {
+            display: none;
+        }
     }
 }
