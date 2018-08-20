@@ -29,6 +29,11 @@ section#involve-parent {
       }
     }
   }
+  figure {
+    min-height: 280px;
+    background-size: cover;
+    background-position: center 35%;
+  }
   div {
     padding: 8px;
     position: relative;
@@ -53,11 +58,6 @@ section#involve-parent {
         width: calc(100% + 16px);
         margin: -8px -8px 0 -8px;
       }
-    }
-    figure {
-      min-height: 280px;
-      background-size: cover;
-      background-position: center 35%;
     }
     &:not(.involve) {
       position: relative;
