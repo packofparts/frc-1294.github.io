@@ -59,12 +59,17 @@ div#involve-parent {
       background-size: cover;
       background-position: center 35%;
     }
-    &:not(.involve) figure {
-      height: 368px;
-      margin: 16px 4px 4px 4px;
+    &:not(.involve) {
       position: relative;
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
-    }
+      figure {
+        height: 368px;
+        margin: 16px 4px 4px 4px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        width: 88%;
+      }
+    } 
   }
 }
