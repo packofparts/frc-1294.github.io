@@ -1,10 +1,10 @@
 div#involve-parent {
   @media (max-width: 1410px) {
+    margin-left: -8px;
     div {
       display: block;
       width: 98%;
       margin-bottom: 4px;
-
       &:not(.involve) figure {
         display: none;
       }

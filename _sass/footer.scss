@@ -1,7 +1,5 @@
 footer {
     text-align: center;
-    margin-right: -10vw !important;
-    margin-bottom: 0 !important;
     div#sponsor-grid {
         a {
             margin: 8px;
@@ -25,5 +23,12 @@ footer {
             max-width: 900px;
             width: 75%;
         }
+    }
+    @media (min-width: 1090px) {
+        margin-right: -10vw;
+        margin-bottom: 0;
+    }
+    @media (max-width: 1090px) {
+        margin: 0 !important;
     }
 }
