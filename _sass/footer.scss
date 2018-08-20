@@ -1,0 +1,33 @@
+footer {
+    text-align: center;
+    div#sponsor-grid {
+        a {
+            margin: 8px;
+            text-decoration: none;
+            display: inline-block;
+            vertical-align: middle;
+            &:nth-child(-n + 3) img {
+                max-height: 150px;
+                max-width: 300px;
+            }
+            &:nth-child(n + 4) img {
+                max-height: 100px;
+                max-width: 190px;
+            }
+        }
+        hr {
+            border-color: #333;
+            border-style: solid;
+            border-width: 2px;
+            margin: 8px auto;
+            max-width: 900px;
+            width: 75%;
+        }
+    }
+    @media (min-width: 1090px) {
+        margin-bottom: 0 !important;
+    }
+    @media (max-width: 1090px) {
+        margin: 0 !important;
+    }
+}

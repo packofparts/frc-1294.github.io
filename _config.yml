@@ -43,6 +43,7 @@ exclude:
   - Rakefile
   - README.md
   - vendor
+  - yarn.lock
 include:
   - _pages
 sass:

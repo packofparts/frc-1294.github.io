@@ -7,7 +7,7 @@
     {% endcomment %}
     {% for sponsor in site.data.sponsors %}
       <a href="{{ sponsor.url }}">
-        <img src="/assets/img/sponsors/{{ sponsor.img }}.png" alt="{{ sponsor.name }}">
+        <img src="/assets/img/sponsors/{{ sponsor.img }}.png" alt="{{ sponsor.name }} Logo">
       </a>
 
       {% if forloop.index0 == 2 %}
@@ -18,6 +18,7 @@
 </footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/assets/js/mobile_menu.js"></script>
 {% if page.scripts %}
   {% for script in page.scripts %}
 <script src="{{ script }}"></script>

@@ -16,15 +16,18 @@
   </nav>
 
   <ul id="header-nav-social">
-    <li>YT</li>
-    <li>FB</li>
-    <li>TW</li>
-    <li>IG</li>
-    <li>PH</li>
-    <li>GH</li>
+    {% for social in site.data.social %}
+      <li>
+        <a href="{{ social.url }}"><i class="fab fa-{{ social.icon }}"></i></a>
+      </li>
+    {% endfor %}
+
+    <!--li>
+      <a href="javascript:alert('If we ever made a blog, it would be here.')"><i class="fas fa-quote-right"></i></a>
+    </li-->
   </ul>
   
   <span id="nav-button">
-    <!-- TODO: Fonticon hamburger menu -->
+    <i class="fas fa-bars"></i>
   </span>
 </header>

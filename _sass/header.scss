@@ -1,0 +1,157 @@
+header {
+    align-items: center;
+    background: $color-theme-main;
+    box-shadow: 0px 5px 20px 3px $color-shadow-dark;
+    display: flex;
+    height: 78px;
+    justify-content: flex-start;
+    padding: 8px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    * {
+        display: inline;
+    }
+    img#logo {
+        height: 75px;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    nav {
+        margin: 8px;
+        a {
+            text-decoration: none;
+        }
+        span {
+            cursor: pointer;
+        }
+        li {
+            margin-right: 8px;
+            &.menu {
+                ul {
+                    opacity: 0;
+                    position: absolute;
+                    left: 325px;
+                    /* todo: this won't work if we make another menu */
+                    transition: opacity 0.5s linear;
+                    padding: 8px;
+                    display: inline-block;
+                    background: $color-theme-light;
+                    box-shadow: 0px 5px 12px 0px $color-shadow-dark;
+                    z-index: 999;
+                    li {
+                        display: block;
+                    }
+                }
+                &:hover ul {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    ul#header-nav-social {
+        align-items: center;
+        background: $color-bg-light;
+        $border-radius: 15px;
+        // border-top-left-radius: $border-radius;
+        // border-bottom-left-radius: $border-radius;
+        display: flex;
+        flex-wrap: wrap;
+        height: 86px;
+        justify-content: center;
+        padding: 4px;
+        margin-left: auto;
+        margin-right: -8px;
+        width: 120px;
+        a {
+            margin: 0 4px;
+            i {
+                font-size: 2em;
+                // margin-top: 25px; // calc((86px - 32px) / 2);, tweaked a little (-2px) to make it look right
+                &.fa-youtube {
+                    color: $color-social-youtube;
+                }
+                &.fa-facebook {
+                    color: $color-social-facebook;
+                }
+                &.fa-twitter {
+                    color: $color-social-twitter;
+                }
+                &.fa-instagram {
+                    color: $color-social-instagram;
+                }
+                &.fa-github {
+                    color: $color-social-github;
+                }
+            }
+        }
+    }
+
+    span#nav-button {
+        margin-left: auto;
+        margin-right: 16px;
+        font-size: 2em;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1090px) {
+    header {
+        width:100vw;
+        nav {
+            display: none;
+            position: fixed;
+            top: 94px;
+            left: 0;
+            background-color: $color-bg-dark;
+            width: 100vw;
+            margin: 0;
+            padding: 8px;
+            font-size: 1.2em;
+            li {
+                display: block;
+                margin-bottom: 8px;
+
+                &.menu {
+                    span {
+                        display: block;
+                    }
+                    ul {
+                        margin-left: 16px;
+                        opacity: 1;
+                        position: initial;
+                        background-color: transparent;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+        ul#header-nav-social {
+            display: flex;
+            position: fixed;
+            width: 100vw;
+            top: 315px;
+            left: -110vw;
+            margin: 0;
+            height: initial;
+            transition: left 0.5s ease-in-out;
+            &.visible {
+                left: 0;
+            }
+        }
+        span#nav-button {
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 1090px) {
+    header {
+        width: 80vw;
+        span#nav-button {
+            display: none;
+        }
+    }
+}

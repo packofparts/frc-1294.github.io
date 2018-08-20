@@ -2,5 +2,7 @@
     "files.associations": {
         "*.html": "jekyll",
         ".stylelintrc": "json"
-    }
+    },
+
+    "formatall.search.include": "_sass/*.scss"
 }
