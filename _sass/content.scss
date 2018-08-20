@@ -28,6 +28,7 @@ a.button {
     text-decoration: none;
     font-size: 1.25em;
     min-height: 28px;
+    padding: 2px;
     box-shadow: 0px 2px 5px #bbb;
     transition: background-color 0.1s ease-in-out;
     &.btn-med {
@@ -42,6 +43,7 @@ a.button {
     i {
         $icon-margin: 2px;
         background-color: $color-theme-dark;
+        margin: -2px;
         padding: 8px;
         &:nth-child(1) {  // icon on left
             margin-right: $icon-margin;
@@ -55,11 +57,8 @@ a.button {
             border-bottom-right-radius: 5px;
         }
     }
-    span {
-        margin: 4px;
-        &:has(i) {
-            margin: 0;
-        }
+    span:has(i) {
+        margin: 0;
     }
 
     /*
