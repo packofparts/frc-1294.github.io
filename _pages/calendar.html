@@ -1,7 +1,20 @@
 ---
-layout: default
+layout: basic
 title: Calendar
 permalink: /calendar/
 ---
 
-<p>This is where the calendar would be.</p>
+<div class="centered-content">
+    <iframe src="https://calendar.google.com/calendar/embed?title=Top%20Gun%20Calendar&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=webmaster%40team1294.org&amp;color=%232F6309&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<div class="centered-content">
+    <h3 id="nextevent"></h3>
+    <div id="countdown"></div>
+    <p style="color: #777; font-size: 0.8em;">
+        <a href="https://github.com/team1257-website/team-website/blob/gh-pages/js/countdown.js" style="text-decoration: none;">
+            Countdown timer powered by countdown.js, written by FRC team 1257.
+        </a>
+    </p>
+    <script src="/assets/js/vendor/countdown.js"></script>
+</div>

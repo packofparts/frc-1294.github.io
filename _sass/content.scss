@@ -57,9 +57,6 @@ a.button {
             border-bottom-right-radius: 5px;
         }
     }
-    span:has(i) {
-        margin: 0;
-    }
 
     /*
     ========================
@@ -101,6 +98,8 @@ div#content-container {
 }
 
 .content-block {
+    padding: 8px;
+    margin-bottom: 8px;
     &.card {
         background: $color-card-bg;
         box-shadow: 0 2px 1px 1px $color-shadow-dark;
@@ -150,8 +149,13 @@ div#content-container {
             }
         }
     }
-    padding: 8px;
-    margin-bottom: 8px;
+    div.centered-content {
+        text-align: center;
+        img {
+            display: inline-block;            
+            vertical-align: middle;
+        }
+    }
 }
 
 /*
