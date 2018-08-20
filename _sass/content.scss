@@ -10,7 +10,7 @@ figure.img-with-caption {
         max-width: 750px;
     }
     figcaption {
-        color: #999;
+        color: $color-font-caption;
         font-size: small;
     }
 }
@@ -20,25 +20,25 @@ h1 {
 }
 
 h2 {
-    color: #ccc;
+    color: $color-font-h2;
 }
 
 h3 {
-    color: #999;
+    color: $color-font-h3;
     font-size: 1em;
 }
 
 .content-block {
     &.card {
-        background: #eee;
-        box-shadow: 0 2px 1px 1px black;
-        color: #333;
+        background: $color-card-bg;
+        box-shadow: 0 2px 1px 1px $color-shadow-dark;
+        color: $color-card-font;
         figure.img-with-caption figcaption {
-            color: #444;
+            color: $color-card-bg-font-caption;
         }
     }
     &.extend {
-        background: #222;
+        background: $color-bg-dark;
         width: auto;
     }
     &.angular {

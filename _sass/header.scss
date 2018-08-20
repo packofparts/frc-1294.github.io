@@ -1,8 +1,9 @@
 header {
     align-items: center;
-    background: #5E8E6B;
-    box-shadow: 0px 5px 20px 3px black;
+    background: $color-theme-main;
+    box-shadow: 0px 5px 20px 3px $color-shadow-dark;
     display: flex;
+    height: 78px;
     justify-content: flex-start;
     padding: 8px;
     position: fixed;
@@ -37,8 +38,8 @@ header {
                     transition: opacity 0.5s linear;
                     padding: 8px;
                     display: inline-block;
-                    background: #85ad8f;
-                    box-shadow: 0px 5px 12px 0px black;
+                    background: $color-theme-light;
+                    box-shadow: 0px 5px 12px 0px $color-shadow-dark;
                     z-index: 999;
                     li {
                         display: block;
@@ -51,28 +52,32 @@ header {
         }
     }
     ul#header-nav-social {
-        background: #444;
-        border-radius: 5px;
+        background: $color-bg-light;
+        $border-radius: 15px;
+        border-top-left-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+        height: 86px;
         padding: 4px;
         margin-left: auto;
+        margin-right: -8px;
         a {
             margin: 0 4px;
             i {
                 font-size: 2em;
                 &.fa-youtube {
-                    color: #f00;
+                    color: $color-social-youtube;
                 }
                 &.fa-facebook {
-                    color: #f7f7f9;
+                    color: $color-social-facebook;
                 }
                 &.fa-twitter {
-                    color: #1da1f2;
+                    color: $color-social-twitter;
                 }
                 &.fa-instagram {
-                    color: #a835b6;
+                    color: $color-social-instagram;
                 }
                 &.fa-github {
-                    color: #fff;
+                    color: $color-social-github;
                 }
             }
         }
