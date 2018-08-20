@@ -1,0 +1,18 @@
+---
+layout: basic
+title: Blog
+permalink: /blog/
+---
+
+<h1>Blog</h1>
+
+<section class="post-list">
+  {% for post in site.posts %}
+    <div>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <p>{{ post.date | date: "%A, %B %d, %Y, %I:%M %p" }}</p>
+      <p>{% if post.categories %}Category: <a href="/{{ page.categories | join: "/" }}">{{ post.categories | join: "/" }}</a>{% endif %}{% if post.categories and post.tags.size > 0 %} || {% endif %}{% unless post.tags.size == 0 %}Tags: {{ post.tags | join: ", "}}{% endunless %}</p>
+      {{ post.excerpt }}
+    </div><hr>
+  {% endfor %}
+</section>
