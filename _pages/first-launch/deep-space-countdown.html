@@ -1,0 +1,83 @@
+---
+layout: default
+title: FIRST Launch 2019
+permalink: /first-launch/deep-space-countdown
+---
+
+<section class="content-block centered-content">
+    <img alt="Destination Deep Space logo" class="float-left" src="/assets/img/first-launch/FIRST-DestDeepSpace-logo_reverse-sponsor.png">
+    <div>
+        <h1>The 2019 <em>FIRST</em> Robotics Competition game is Destination: Deep Space!</h1>
+        <h3 id="nextevent"></h3>
+        <div id="countdown"></div>
+        <p style="color: #777; font-size: 0.8em;">
+            <a href="https://github.com/team1257-website/team-website/blob/gh-pages/js/countdown.js" style="text-decoration: none;">
+                Countdown timer powered by countdown.js, written by FRC team 1257.
+            </a>
+        </p>
+        <script src="/assets/js/vendor/countdown.js"></script>
+    </div>
+</section>
+
+<style>
+    body {
+        background-image: url('/assets/img/first-launch/FIRST-DeepSpace-Background-Stars.jpg');
+        background-size: cover;
+    }
+
+    section.content-block {
+        position: absolute;
+        left: 0;
+        padding: 0;
+        width: 100vw;
+    }
+
+    section.content-block img {
+        margin-right: 10px;
+    }
+
+    div#countdown {
+        text-shadow: 3px 3px 5px black;
+    }
+
+    footer {
+        margin-top: 92vh !important;
+    }
+
+    @media (min-width: 1090px) {
+        section.content-block {
+            top: 45vh;
+            width: 100vw;
+        }
+
+        section.content-block img {
+            margin-top: -230px;
+            height: 702px;
+        }
+
+        h3#nextevent {
+            font-size: 1.25em;
+        }
+
+        div#countdown {
+            font-size: 250%;
+        }
+
+        div#countdown strong {
+            font-size: 190%;
+        }
+        
+    }
+
+    @media (max-width: 1090px) {
+        section.content-block {
+            background-color: #333333aa;
+            border-radius: 10px;
+        }
+
+        section.content-block img {
+            margin-top: -55px;
+            height: 50vh;
+        }
+    }
+</style>
