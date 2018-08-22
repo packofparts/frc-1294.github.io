@@ -149,11 +149,19 @@ div#content-container {
             }
         }
     }
-    div.centered-content {
-        text-align: center;
-        img {
-            display: inline-block;            
-            vertical-align: middle;
+}
+
+aside {
+    border-left: 5px $color-theme-main solid;
+    padding: 6px;
+    margin: 10px 0;
+
+    block-quote {
+        font-size: 1.25em;
+
+        span.cite {
+            font-size: 0.5em;
+            font-style: italic;
         }
     }
 }
