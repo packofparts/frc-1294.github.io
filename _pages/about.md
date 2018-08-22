@@ -12,7 +12,7 @@ stylesheets:
     <img alt="FIRST Robotics Competition Logo" src="/assets/img/frc-logo-white.png" style="height: 210px;">
 </div>
 
-We are Top Gun, the robotics team at [Eastlake High School](https//ehs.lwsd.org). Each year we compete in the [_FIRST_ Robotics Competition](https://firstinspires.org/frc), a competition organized by the international nonprofit [_FIRST_](https://firstinspires.org) to engage kids K-12 with interesting robotics competitions that teach them useful skills in fields such as STEM, engineering, and business.
+We are Top Gun, the robotics team at [Eastlake High School](https://ehs.lwsd.org). Each year we compete in the [_FIRST_ Robotics Competition](https://firstinspires.org/frc), a competition organized by the international nonprofit [_FIRST_](https://firstinspires.org) to engage kids K-12 with interesting robotics competitions that teach them useful skills in fields such as STEM, engineering, and business.
 
 Each year for the competition, we build an up to 120 pound robot to play a game designed by _FIRST_ revealed at the start of the season in January. From that point we have six weeks to plan, build, program, and complete our robot design. We then compete with other teams from around the state, country, and world in various competitions, with the chance to qualify for the world championships.
 
