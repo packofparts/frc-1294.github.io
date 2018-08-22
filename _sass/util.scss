@@ -1,7 +1,36 @@
-.float-left {
-    float: left;
+.centered-content {
+    text-align: center;
+    img {
+        display: inline-block;            
+        vertical-align: middle;
+    }
 }
 
-.float-right {
-    float: right;
+@media (max-width: 1090px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: initial;
+    }
+    .float-left, .float-right {
+        display: block;
+        margin: 0 auto !important;
+    }
+}
+
+@media (min-width: 1090px) {
+    .desktop {
+        display: initial;
+    }
+    .mobile {
+        display: none;
+    }
+    .float-left {
+        float: left;
+    }
+    
+    .float-right {
+        float: right;
+    }
 }

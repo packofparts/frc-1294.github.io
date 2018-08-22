@@ -33,8 +33,7 @@ header {
                 ul {
                     opacity: 0;
                     position: absolute;
-                    left: 325px;
-                    /* todo: this won't work if we make another menu */
+                    left: 385px;    /* todo: this won't work if we make another menu */
                     transition: opacity 0.5s linear;
                     padding: 8px;
                     display: inline-block;
@@ -91,7 +90,7 @@ header {
 
     span#nav-button {
         margin-left: auto;
-        margin-right: 16px;
+        margin-right: 35px;
         font-size: 2em;
         cursor: pointer;
     }
@@ -132,7 +131,7 @@ header {
             display: flex;
             position: fixed;
             width: 100vw;
-            top: 315px;
+            top: 345px;
             left: -110vw;
             margin: 0;
             height: initial;
