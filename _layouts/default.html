@@ -3,7 +3,7 @@
 
 {% include head.html %}
 
-<body>
+<body {% if page.body-class %}class="{{ page.body-class | join: ' ' }}"{% endif %}>
   {% include header.html %}
 
   <div id="content-container" {% unless page.hero-image %} style="margin-top: 95px;" {% endunless %}>
