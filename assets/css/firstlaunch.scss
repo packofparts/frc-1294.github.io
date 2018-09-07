@@ -61,7 +61,7 @@ section {
     }
     &.fl-countdown-small {
         background-image: $background_deepspace_img_notile;
-        background-size: 200%;
+        background-size: cover;
         min-height: 240px;
         img {
             margin-right: 10px;
@@ -72,7 +72,7 @@ section {
             background-position-y: 50%;
             animation: scroll-bg-up-mid linear 300s infinite;
             background-image: $background_deepspace_img;
-            background-size: cover;
+            background-size: 200%;
             h3#nextevent {
                 font-size: 1.25em;
             }
