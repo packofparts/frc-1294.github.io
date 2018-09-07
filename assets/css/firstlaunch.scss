@@ -6,11 +6,14 @@ $background_deepspace_img_notile: url($background_img_baseurl + 'FIRST-DeepSpace
 $background_generic_img: url($background_img_baseurl + 'FIRST-Launch_star-background.jpg');
 
 body.fl-countdown-fullscreen {
-    background-image: $background_deepspace_img_notile;
-    background-size: cover;
+    animation: scroll-bg-up linear 150s infinite;
+    background-image: $background_deepspace_img;
+    background-size: 200%;
     @media (max-width: 1090px) {
-        background-image: $background_deepspace_img;
-        background-size: 200%;
+        animation: initial;
+        background-image: $background_deepspace_img_notile;
+        background-size: cover;
+        background-position: center center;
     }
     section.content-block {
         position: absolute;
@@ -19,6 +22,10 @@ body.fl-countdown-fullscreen {
         width: 100vw;
         img {
             margin-right: 10px;
+            @media (max-width: 1090px) {
+                margin-top: -55px;
+                height: 50vh;
+            }
         }
         div#countdown {
             text-shadow: 3px 3px 5px black;
@@ -35,14 +42,6 @@ body.fl-countdown-fullscreen {
             div#countdown strong {
                 font-size: 190%;
             }        
-        }
-        @media (max-width: 1090px) {
-            background-color: #333333aa;
-            border-radius: 10px;
-            img {
-                margin-top: -55px;
-                height: 50vh;
-            }
         }
     }
     footer {
@@ -70,6 +69,8 @@ section {
             width: 350px;
         }
         @media (min-width: 1090px) {
+            background-position-y: 50%;
+            animation: scroll-bg-up-mid linear 300s infinite;
             background-image: $background_deepspace_img;
             background-size: cover;
             h3#nextevent {
@@ -85,29 +86,19 @@ section {
     }
 }
 
-@media (min-width: 1090px) {
-    $animation-time: 300s;
-    .scroll-bg-up {
-        animation: scroll-bg-up linear $animation-time infinite;
+@keyframes scroll-bg-up {
+    0% {
+        background-position-y: 0%;
     }
-    .scroll-bg-up-mid {
+    100% {
+        background-position-y: 100%;
+    }
+}
+@keyframes scroll-bg-up-mid {
+    0% {
         background-position-y: 50%;
-        animation: scroll-bg-up-mid linear $animation-time infinite;
     }
-    @keyframes scroll-bg-up {
-        0% {
-            background-position-y: 0%;
-        }
-        100% {
-            background-position-y: 100%;
-        }
-    }
-    @keyframes scroll-bg-up-mid {
-        0% {
-            background-position-y: 50%;
-        }
-        100% {
-            background-position-y: 150%;
-        }
+    100% {
+        background-position-y: 150%;
     }
 }
