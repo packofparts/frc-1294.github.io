@@ -2,12 +2,14 @@
 ---
 $background_img_baseurl: '/assets/img/first-launch/';
 $background_deepspace_img: url($background_img_baseurl + 'FIRST-DeepSpace-Background-Stars-tile.jpg');
+$background_deepspace_img_notile: url($background_img_baseurl + 'FIRST-DeepSpace-Background-Stars.jpg');
 $background_generic_img: url($background_img_baseurl + 'FIRST-Launch_star-background.jpg');
 
 body.fl-countdown-fullscreen {
-    background-image: $background_deepspace_img;
+    background-image: $background_deepspace_img_notile;
     background-size: cover;
     @media (max-width: 1090px) {
+        background-image $background_deepspace_img;
         background-size: 200%;
     }
     section.content-block {
@@ -59,7 +61,7 @@ section {
         }
     }
     &.fl-countdown-small {
-        background-image: $background_deepspace_img;
+        background-image: $background_deepspace_img_notile;
         background-size: cover;
         min-height: 240px;
         img {
@@ -68,6 +70,7 @@ section {
             width: 350px;
         }
         @media (min-width: 1090px) {
+            background-image: $background_deepspace_img;
             background-size: 200%;
             h3#nextevent {
                 font-size: 1.25em;
