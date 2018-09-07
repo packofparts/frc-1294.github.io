@@ -6,7 +6,10 @@ $background_generic_img: url($background_img_baseurl + 'FIRST-Launch_star-backgr
 
 body.fl-countdown-fullscreen {
     background-image: $background_deepspace_img;
-    background-size: 200%;
+    background-size: cover;
+    @media (max-width: 1090px) {
+        background-size: 200%;
+    }
     section.content-block {
         position: absolute;
         left: 0;
@@ -57,7 +60,7 @@ section {
     }
     &.fl-countdown-small {
         background-image: $background_deepspace_img;
-        background-size: 200%;
+        background-size: cover;
         min-height: 240px;
         img {
             margin-right: 10px;
@@ -65,6 +68,7 @@ section {
             width: 350px;
         }
         @media (min-width: 1090px) {
+            background-size: 200%;
             h3#nextevent {
                 font-size: 1.25em;
             }
@@ -78,27 +82,29 @@ section {
     }
 }
 
-$animation-time: 300s;
-.scroll-bg-up {
-    animation: scroll-bg-up linear $animation-time infinite;
-}
-.scroll-bg-up-mid {
-    background-position-y: 50%;
-    animation: scroll-bg-up-mid linear $animation-time infinite;
-}
-@keyframes scroll-bg-up {
-    0% {
-        background-position-y: 0%;
+@media (min-width: 1090px) {
+    $animation-time: 300s;
+    .scroll-bg-up {
+        animation: scroll-bg-up linear $animation-time infinite;
     }
-    100% {
-        background-position-y: 100%;
-    }
-}
-@keyframes scroll-bg-up-mid {
-    0% {
+    .scroll-bg-up-mid {
         background-position-y: 50%;
+        animation: scroll-bg-up-mid linear $animation-time infinite;
     }
-    100% {
-        background-position-y: 150%;
+    @keyframes scroll-bg-up {
+        0% {
+            background-position-y: 0%;
+        }
+        100% {
+            background-position-y: 100%;
+        }
+    }
+    @keyframes scroll-bg-up-mid {
+        0% {
+            background-position-y: 50%;
+        }
+        100% {
+            background-position-y: 150%;
+        }
     }
 }
