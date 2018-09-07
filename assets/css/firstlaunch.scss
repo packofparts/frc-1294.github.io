@@ -62,7 +62,7 @@ section {
     }
     &.fl-countdown-small {
         background-image: $background_deepspace_img_notile;
-        background-size: cover;
+        background-size: 200%;
         min-height: 240px;
         img {
             margin-right: 10px;
@@ -71,7 +71,7 @@ section {
         }
         @media (min-width: 1090px) {
             background-image: $background_deepspace_img;
-            background-size: 200%;
+            background-size: cover;
             h3#nextevent {
                 font-size: 1.25em;
             }
