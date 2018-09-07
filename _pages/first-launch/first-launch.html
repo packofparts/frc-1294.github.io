@@ -2,12 +2,16 @@
 layout: default
 title: FIRST Launch 2019
 permalink: /first-launch/
+scripts:
+    - /assets/js/vendor/countdown.js
+stylesheets:
+    - /assets/css/firstlaunch.css
 ---
 
 <img class="desktop" src="/assets/img/first-launch/FIRST-Launch-logo_full-color-launch-programs_full-color-launch-programs-horiz.svg" style="width: 100vw; margin-left: calc(-10vw - 8px);">
 
-<section class="content-block extend" style="background-image: url('/assets/img/first-launch/FIRST-Launch_star-background.jpg'); background-size: cover; min-height: 250px;">
-    <img alt="Animated FIRST Launch logo" class="float-right" src="/assets/img/first-launch/FIRST-Launch.gif" style="margin-left: 10px; /*border: 2px solid #5E8E6B;*/">
+<section class="content-block extend fl-info">
+    <img alt="Animated FIRST Launch logo" class="float-right" src="/assets/img/first-launch/FIRST-Launch.gif">
     <h1>FIRST Launch 2019</h1>
     The official challenge themes for the 2019 season of <strong>all</strong> <em>FIRST</em> programs has been revealed, and teams this year are going to space!
     For the first time, all four programs, K-12, all share the common theme of reaching for the stars and exploring the depths of space.
@@ -20,8 +24,8 @@ permalink: /first-launch/
     </blockquote></aside>
 </section>
 
-<section class="content-block extend centered-content" style="background-image: url('/assets/img/first-launch/FIRST-DeepSpace-Background-Stars.jpg'); background-size: cover; min-height: 240px;">
-    <img alt="Destination Deep Space logo" class="float-left" src="/assets/img/first-launch/FIRST-DestDeepSpace-logo_reverse-sponsor.png" style="margin-right: 10px; margin-top: -55px; width: 350px;">
+<section class="content-block extend centered-content fl-countdown-small scroll-bg-up-mid">
+    <img alt="Destination Deep Space logo" class="float-left" src="/assets/img/first-launch/FIRST-DestDeepSpace-logo_reverse-sponsor.png">
     <div>
         <h1>The 2019 <em>FIRST</em> Robotics Competition game is Destination: Deep Space!</h1>
         <h3 id="nextevent"></h3>
@@ -31,21 +35,5 @@ permalink: /first-launch/
                 Countdown timer powered by countdown.js, written by FRC team 1257.
             </a>
         </p>
-        <style>
-            @media (min-width: 1090px) {
-                h3#nextevent {
-                    font-size: 1.25em;
-                }
-
-                div#countdown {
-                    font-size: 1.7em;
-                }
-
-                div#countdown strong {
-                    font-size: 2em;
-                }
-            }
-        </style>
-        <script src="/assets/js/vendor/countdown.js"></script>
     </div>
 </section>

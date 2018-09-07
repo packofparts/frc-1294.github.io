@@ -2,6 +2,11 @@
 layout: default
 title: FIRST Launch 2019
 permalink: /first-launch/deep-space-countdown
+body-class: [fl-countdown-fullscreen, scroll-bg-up]
+scripts:
+    - /assets/js/vendor/countdown.js
+stylesheets:
+    - /assets/css/firstlaunch.css
 ---
 
 <section class="content-block centered-content">
@@ -15,69 +20,5 @@ permalink: /first-launch/deep-space-countdown
                 Countdown timer powered by countdown.js, written by FRC team 1257.
             </a>
         </p>
-        <script src="/assets/js/vendor/countdown.js"></script>
     </div>
 </section>
-
-<style>
-    body {
-        background-image: url('/assets/img/first-launch/FIRST-DeepSpace-Background-Stars.jpg');
-        background-size: cover;
-    }
-
-    section.content-block {
-        position: absolute;
-        left: 0;
-        padding: 0;
-        width: 100vw;
-    }
-
-    section.content-block img {
-        margin-right: 10px;
-    }
-
-    div#countdown {
-        text-shadow: 3px 3px 5px black;
-    }
-
-    footer {
-        margin-top: 92vh !important;
-    }
-
-    @media (min-width: 1090px) {
-        section.content-block {
-            top: 45vh;
-            width: 100vw;
-        }
-
-        section.content-block img {
-            margin-top: -230px;
-            height: 702px;
-        }
-
-        h3#nextevent {
-            font-size: 1.25em;
-        }
-
-        div#countdown {
-            font-size: 250%;
-        }
-
-        div#countdown strong {
-            font-size: 190%;
-        }
-        
-    }
-
-    @media (max-width: 1090px) {
-        section.content-block {
-            background-color: #333333aa;
-            border-radius: 10px;
-        }
-
-        section.content-block img {
-            margin-top: -55px;
-            height: 50vh;
-        }
-    }
-</style>
