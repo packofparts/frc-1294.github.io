@@ -9,7 +9,7 @@ body.fl-countdown-fullscreen {
     background-image: $background_deepspace_img_notile;
     background-size: cover;
     @media (max-width: 1090px) {
-        background-image $background_deepspace_img;
+        background-image: $background_deepspace_img;
         background-size: 200%;
     }
     section.content-block {
