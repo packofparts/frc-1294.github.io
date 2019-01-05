@@ -56,6 +56,13 @@ events.push(new event(
     'https://www.firstinspires.org/robotics/frc/kickoff'
 ));
 
+events.push(new event(
+    'FRC 2019: Destination Deep Space Kickoff',
+    new Date('Feb 19, 2019, 23:59:00 GMT-500').getTime(),
+    new Date('Feb 20, 2019, 00:00:00 GMT-500').getTime(),
+    'https://www.firstinspires.org/robotics/frc/season-calendar/stop-build-day'
+));
+
 //Sort the events array based on start date
 events.sort(function(a, b) {
     return a.start - b.start;
