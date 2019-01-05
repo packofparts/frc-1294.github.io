@@ -51,7 +51,7 @@ var eventPosted = false;
 
 events.push(new event(
     'FRC 2019: Destination Deep Space Kickoff',
-    new Date('Jan, 5, 2019, 6:00:00 GMT-800').getTime(),
+    new Date('Jan, 5, 2019, 7:00:00 GMT-800').getTime(),
     new Date('Jan, 5, 2019, 12:00:00 GMT-800').getTime(),
     'https://www.firstinspires.org/robotics/frc/kickoff'
 ));
