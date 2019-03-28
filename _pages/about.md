@@ -26,6 +26,7 @@ Our team teaches students a variety of skills: from building the robot, to progr
                <img alt="" src="/assets/img/first-icon.png">
                <strong>{{ award.award }}</strong>
                {{ award.year }} {{ award.event }}
+               {% if award.medal %}<div class="medal medal-{{ award.medal }}" style="bottom: -20px; z-index: 999;" title="Medal">{% case award.medal %}{% when "silver" %}2{% when "gold" %}1{% endcase %}</div>{% endif %}
            </div>
     
         {% else %}
@@ -35,6 +36,7 @@ Our team teaches students a variety of skills: from building the robot, to progr
                 {% endif %}
                 <strong>{{ award.award }}</strong>
                 <p>{{ award.year }} {{ award.event }}</p>
+               {% if award.medal %}<div class="medal medal-{{ award.medal }}" title="Medal">{% case award.medal %}{% when "silver" %}2{% when "gold" %}1{% endcase %}</div>{% endif %}
             </div>
         
         {% endif %}

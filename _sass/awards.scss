@@ -1,7 +1,11 @@
 @import "vendor/banners.sass";
+@import url('https://fonts.googleapis.com/css?family=Exo:900');
 
 .banners {
   font-size: 0.8em;
+  div.banner {
+    position: relative;
+  }
   strong {
     display: block;
     margin-bottom: 8px;
@@ -17,6 +21,7 @@ div.award-inline {
   width: 120px;
   p, strong {
     width: 100%;
+    z-index: 1;
   }
   &.award-plaque {
     p, strong {
@@ -43,10 +48,31 @@ div.award-inline {
     }
     strong {
       margin-bottom: 0;
+      margin-top: -6px;
       padding: 8px;
     }
     p {
       padding: 2px;
     }
+  }
+}
+
+.medal {
+  border-radius: 100%;
+  font-family: "Exo", "Titillium Web", sans-serif;
+  font-weight: 900;
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  vertical-align: middle;
+  width: 20px;
+  &.medal-silver {
+    background-color: #c0c5c9;
+  }
+  &.medal-gold {
+    background-color: #cbba68;
   }
 }
