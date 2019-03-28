@@ -73,3 +73,15 @@ section#involve-parent {
     } 
   }
 }
+
+section.content-block:first-of-type {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  div.banner {
+    margin-top: -8px;
+    z-index: 10;
+  }
+}

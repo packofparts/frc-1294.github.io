@@ -7,4 +7,4 @@ gem "jekyll-admin"
 gem "octopress-autoprefixer", group: :jekyll_plugins
 gem 'puma'
 gem 'rack-jekyll'
-gem 'rake'
+gem "rack", ">= 1.6.11"

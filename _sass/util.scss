@@ -8,10 +8,10 @@
 
 @media (max-width: 1090px) {
     .desktop {
-        display: none;
+        display: none !important;
     }
     .mobile {
-        display: initial;
+        display: initial !important;
     }
     .float-left, .float-right {
         display: block;
@@ -21,15 +21,14 @@
 
 @media (min-width: 1090px) {
     .desktop {
-        display: initial;
+        display: initial !important;
     }
     .mobile {
-        display: none;
+        display: none !important;
     }
     .float-left {
         float: left;
     }
-    
     .float-right {
         float: right;
     }
