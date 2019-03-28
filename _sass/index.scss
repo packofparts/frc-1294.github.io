@@ -73,3 +73,13 @@ section#involve-parent {
     } 
   }
 }
+
+section.content-block:first-of-type {
+  position: relative;
+  div.banner {
+    position: absolute;
+    top: 0;
+    right: 10vw;
+    z-index: 10;
+  }
+}

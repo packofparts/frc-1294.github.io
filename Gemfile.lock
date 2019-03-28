@@ -8,8 +8,6 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
-    autoprefixer-rails (9.5.0)
-      execjs
     backports (3.12.0)
     coffee-script (2.4.1)
       coffee-script-source
@@ -228,10 +226,7 @@ GEM
       mini_portile2 (~> 2.4.0)
     octokit (4.13.0)
       sawyer (~> 0.8.0, >= 0.5.3)
-    octopress-autoprefixer (2.0.1)
-      autoprefixer-rails
-      jekyll (~> 3.0)
-    parallel (1.16.0)
+    parallel (1.16.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (3.0.3)
@@ -245,7 +240,6 @@ GEM
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
-    rake (12.3.2)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
@@ -289,16 +283,15 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  github-pages (>= 197)
+  github-pages
   html-proofer
   jekyll-admin
-  octopress-autoprefixer
   puma
+  rack (>= 1.6.11)
   rack-jekyll
-  rake
 
 RUBY VERSION
-   ruby 2.5.3p105
+   ruby 2.6.0p0
 
 BUNDLED WITH
-   1.16.3
+   2.0.1

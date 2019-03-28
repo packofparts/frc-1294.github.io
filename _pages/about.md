@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 hero-image: /assets/img/prototype-powercube.jpg
 stylesheets:
-    - /assets/css/about.css
+    - /assets/css/awards.css
 ---
 
 <div class="centered-content">
