@@ -50,5 +50,4 @@ include:
 sass:
   style: compressed
 plugins:
-  - octopress-autoprefixer
   - jekyll-admin
