@@ -51,9 +51,37 @@ var eventPosted = false;
 
 events.push(new event(
     'FRC 2019: Destination Deep Space Kickoff',
-    new Date('Jan, 5, 2019, 6:00:00 GMT-800').getTime(),
-    new Date('Jan, 5, 2019, 12:00:00 GMT-800').getTime(),
+    new Date('Jan 5, 2019, 6:00:00 GMT-700').getTime(),
+    new Date('Jan 5, 2019, 12:00:00 GMT-700').getTime(),
     'https://www.firstinspires.org/robotics/frc/kickoff'
+));
+
+events.push(new event(
+    'Stop Build Day',
+    new Date('Feb 19, 2019, 23:59:00 GMT-400').getTime(),
+    new Date('Feb 20, 2019, 00:00:00 GMT-400').getTime(),
+    'https://www.firstinspires.org/robotics/frc/season-calendar/stop-build-day'
+));
+
+events.push(new event(
+    '2019 PNW District - Auburn Mountainview District Event',
+    new Date('Mar 8, 2019, 17:00:00 GMT-700').getTime(),
+    new Date('Mar 10, 2019, 17:00:00 GMT-700').getTime(),
+    'http://firstwa.org/Team-Resources/FIRST-Robotics-Competition-Teams-Resources/FRC-Events/2019-Week-2-Auburn-Mountainview'
+));
+
+events.push(new event(
+    '2019 PNW District - Glacier Peak District Event',
+    new Date('Mar 22, 2019, 17:00:00 GMT-700').getTime(),
+    new Date('Mar 24, 2019, 17:00:00 GMT-700').getTime(),
+    'http://firstwa.org/Team-Resources/FIRST-Robotics-Competition-Teams-Resources/FRC-Events/2019-Week-4-Glacier-Peak'
+));
+
+events.push(new event(
+    '2019 PNW District - District Championship (pending qualification)',
+    new Date('Apr 3, 2019, 17:00:00 GMT-700').getTime(),
+    new Date('Apr 6, 2019, 18:00:00 GMT-700').getTime(),
+    'http://firstwa.org/Team-Resources/FIRST-Robotics-Competition-Teams-Resources/FRC-Events/2019-FRC-PNW-District-Championship'
 ));
 
 //Sort the events array based on start date
