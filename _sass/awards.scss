@@ -1,11 +1,8 @@
 @import "vendor/banners.sass";
 @import url('https://fonts.googleapis.com/css?family=Exo:900');
 
-.banners {
+div.banner {
   font-size: 0.8em;
-  div.banner {
-    position: relative;
-  }
   strong {
     display: block;
     margin-bottom: 8px;
@@ -16,12 +13,17 @@
 div.award-inline {
   background-size: contain !important;
   display: inline-block;
+  font-size: 0.8em;
   height: 158.5px;
   position: relative;
   width: 120px;
   p, strong {
     width: 100%;
     z-index: 5;
+  }
+  strong {
+    margin-bottom: 8px;
+    font-size: initial;
   }
   &.award-plaque {
     p, strong {
@@ -47,6 +49,7 @@ div.award-inline {
       margin: 0;
     }
     strong {
+      display: block;
       margin-bottom: 0;
       margin-top: -6px;
       padding: 8px;
