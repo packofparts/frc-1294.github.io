@@ -1,12 +1,3 @@
 ---
 ---
-@import "vendor/banners.sass";
-
-.banners {
-    font-size: 0.8em;
-    strong {
-        display: block;
-        margin-bottom: 8px;
-        font-size: initial;
-    }
-}
+@import "awards.scss";

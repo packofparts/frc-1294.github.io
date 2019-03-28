@@ -1,22 +1,25 @@
 - award: Finalist
   year: 2004
   event: Pacific Northwest Regional
-  type: plaque
+  type: trophy
+  medal: silver
 
 - award: Finalist
   year: 2009
   event: Microsoft Seattle Regional
-  type: plaque
+  type: trophy
+  medal: silver
 
 - award: Creativity Award
   year: 2012
   event: Seattle Cascade Regional
-  type: plaque
+  type: trophy
 
 - award: Finalist
   year: 2014
   event: Pacific Northwest District Championship
-  type: plaque
+  type: trophy
+  medal: silver
 
 - award: Quality Award
   year: 2017
@@ -27,6 +30,7 @@
   year: 2017
   event: Glacier Peak PNW District Event
   type: plaque
+  medal: silver
 
 - award: Peak of Technology Award
   year: 2017
@@ -42,3 +46,4 @@
   year: 2019
   event: Glacier Peak PNW District Event
   type: banner
+  medal: gold
