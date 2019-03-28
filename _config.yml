@@ -28,6 +28,7 @@ github_username:  FRC-1294
 markdown: kramdown
 exclude:
   - .gitignore
+  - .idea
   - .stylelintrc
   - .travis.yml
   - .vscode
