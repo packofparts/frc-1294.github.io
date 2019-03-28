@@ -20,26 +20,13 @@ Our team teaches students a variety of skills: from building the robot, to progr
 
 <div class="centered-content">
     <ul class="banners">
-        <li>
-            <img alt="" src="/assets/img/first-icon.png">
-            <strong>Finalist</strong>
-            2014 Pacific Northwest District Championship
-        </li>
-        <li>
-            <img alt="" src="/assets/img/first-icon.png">
-            <strong>Quality Award</strong>
-            2017 Auburn Mountainview PNW District Event
-        </li>
-        <li>
-            <img alt="" src="/assets/img/first-icon.png">
-            <strong>Finalist</strong>
-            2017 Glacier Peak PNW District Event
-        </li>
-        <li>
-            <img alt="" src="/assets/img/first-icon.png">
-            <strong>Spirit Award</strong>
-            2018 Mount Vernon PNW District Event
-        </li>
+        {% for award in site.data.awards %}
+           <li>
+               <img alt="" src="/assets/img/first-icon.png">
+               <strong>{{ award.award }}</strong>
+               {{ award.year }} {{ award.event }}
+           </li>
+        {% endfor %}
     </ul>
 </div>
 
