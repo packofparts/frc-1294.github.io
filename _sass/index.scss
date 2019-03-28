@@ -75,13 +75,11 @@ section#involve-parent {
 }
 
 section.content-block:first-of-type {
-  &::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+  position: relative;
   div.banner {
-    margin-top: -8px;
+    position: absolute;
+    top: 0;
+    right: 10vw;
     z-index: 10;
   }
 }
