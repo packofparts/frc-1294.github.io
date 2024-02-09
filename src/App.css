@@ -1,13 +1,43 @@
-.App {
-  text-align: center;
+#container {
+    padding: 2%;
+    display: grid;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+    min-width: fit-content;
+    grid-auto-flow: row;
 }
 
-.App-header {
-  background-color: #152545;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(50px + 2vmin);
-  color: rgb(189, 246, 255);
+.gridItem {
+    background-color: red;
+    padding: 2%;
+    border-radius: 20px;
+    margin: 1%;
+}
+
+#mech {
+    background-color: rgb(255, 162, 162);
+}
+
+#elec {
+    background-color: rgb(255, 222, 123);
+}
+
+#soft {
+    background-color: rgb(220, 123, 255);
+}
+
+#desi {
+    background-color: rgb(142, 255, 134);
+}
+
+#mate {
+    background-color: rgb(134, 186, 255);
+}
+
+#exec {
+    background-color: rgb(255, 188, 134);
+}
+
+#form {
+    background-color: rgb(177, 255, 247);
 }
