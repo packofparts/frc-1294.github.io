@@ -1,10 +1,8 @@
 import './CSS/General.css';
-import Handler, { addIssues } from './Handler.js'
+import Handler from './Handler.js'
 
 const SUBTEAM = "Executive"
 let issues = await Handler(SUBTEAM);
-issues = await addIssues("PR", issues);
-issues = await addIssues("Business", issues);
 
 export default function Executive() {
     return (
